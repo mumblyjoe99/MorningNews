@@ -1,0 +1,29 @@
+[
+  {
+    "id": "1736755200000",
+    "title": "Monday Morning Briefing - Tech & World News",
+    "description": "Today's top stories: Major breakthrough in renewable energy, global economic outlook for 2026, and the latest developments in artificial intelligence regulation.",
+    "audioFile": "2026-01-13-morning-news.mp3",
+    "tags": ["Technology", "Economy", "AI", "Politics"],
+    "date": "2026-01-13",
+    "createdAt": "2026-01-13T06:00:00.000Z"
+  },
+  {
+    "id": "1736668800000",
+    "title": "Sunday Special - Week in Review",
+    "description": "A comprehensive look at the week's most important news stories, featuring in-depth analysis of market trends, scientific discoveries, and cultural shifts.",
+    "audioFile": "2026-01-12-morning-news.mp3",
+    "tags": ["Weekly Review", "Analysis", "Business"],
+    "date": "2026-01-12",
+    "createdAt": "2026-01-12T06:00:00.000Z"
+  },
+  {
+    "id": "1736582400000",
+    "title": "Saturday Morning Update - Science & Innovation",
+    "description": "Exploring this week's scientific breakthroughs, space exploration updates, and innovative startups changing the world.",
+    "audioFile": "2026-01-11-morning-news.mp3",
+    "tags": ["Science", "Innovation", "Space", "Startups"],
+    "date": "2026-01-11",
+    "createdAt": "2026-01-11T06:00:00.000Z"
+  }
+]
