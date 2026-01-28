@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morning News - AI-Generated News Streamer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <h1>🎙️ Morning News</h1>
+        <p class="tagline">Your Daily AI-Generated News Briefing</p>
+      </div>
+      <nav class="nav">
+        <a href="#current">Current Episode</a>
+        <a href="#archive">Archive</a>
+        <a href="#subscribe">Subscribe</a>
+      </nav>
+    </header>
+
+    <!-- Current Episode Section -->
+    <section id="current" class="section current-episode">
+      <h2>Today's Episode</h2>
+      <div id="current-episode-container">
+        <div class="loading">Loading today's episode...</div>
+      </div>
+    </section>
+
+    <!-- Episode Archive Section -->
+    <section id="archive" class="section archive">
+      <h2>Episode Archive</h2>
+
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search episodes by title, content, or tags..."
+        >
+        <button id="search-btn" class="btn btn-primary">Search</button>
+        <button id="clear-search-btn" class="btn btn-secondary">Clear</button>
+      </div>
+
+      <!-- Tag Filter -->
+      <div class="tag-filter" id="tag-filter">
+        <span class="filter-label">Filter by tag:</span>
+        <div id="tag-buttons"></div>
+      </div>
+
+      <!-- Episodes Grid -->
+      <div id="episodes-grid" class="episodes-grid">
+        <div class="loading">Loading episodes...</div>
+      </div>
+    </section>
+
+    <!-- Subscribe Section -->
+    <section id="subscribe" class="section subscribe">
+      <h2>Stay Connected</h2>
+      <p>Subscribe to get notified about new episodes and updates!</p>
+
+      <form id="subscribe-form" class="subscribe-form">
+        <div class="form-group">
+          <label for="sub-name">Name (optional)</label>
+          <input type="text" id="sub-name" placeholder="Your name">
+        </div>
+
+        <div class="form-group">
+          <label for="sub-email">Email *</label>
+          <input type="email" id="sub-email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <label>Connect Your Socials (optional)</label>
+          <div class="social-inputs">
+            <input type="text" id="sub-twitter" placeholder="Twitter/X handle">
+            <input type="text" id="sub-instagram" placeholder="Instagram handle">
+            <input type="text" id="sub-youtube" placeholder="YouTube channel">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-large">Subscribe Now</button>
+      </form>
+
+      <div id="subscribe-message" class="message"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Morning News - AI-Generated Content</p>
+      <p class="footer-note">Powered by artificial intelligence. Content generated for entertainment and information purposes.</p>
+    </footer>
+  </div>
+
+  <!-- Audio Player Modal (for archive episodes) -->
+  <div id="player-modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div id="modal-player-container"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
